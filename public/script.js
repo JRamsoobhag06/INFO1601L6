@@ -1,6 +1,3 @@
-// -------------------------------
-// Task 6 - Draw Table
-// -------------------------------
 function drawTable(records){
     let result = document.querySelector('#result');
     let html = '';
@@ -17,9 +14,6 @@ function drawTable(records){
     result.innerHTML = html;
 }
 
-// -------------------------------
-// Task 6 - Fetch Data (Async)
-// -------------------------------
 async function getData(url){
    try{
      let response = await fetch(url);
@@ -30,13 +24,8 @@ async function getData(url){
    }
 }
 
-// Call API
 getData("https://api.openbrewerydb.org/breweries/search?query=harry");
 
-
-// -------------------------------
-// Task 3 - Window + Navigator Info
-// -------------------------------
 console.log(window.navigator.cookieEnabled);
 console.log(window.navigator.onLine);
 console.log(navigator.appVersion);
@@ -51,9 +40,6 @@ window.onload = function(){
    console.log("Page has loaded");
 }
 
-// -------------------------------
-// Task 3 - var vs const example
-// -------------------------------
 var bob = 'bob';
 const sally = 'sally';
 
@@ -62,4 +48,5 @@ console.log(window.sally === sally);
 
 var document = 'hello this is my variable';
 console.log(document);
+
 console.log(window.document === document);
